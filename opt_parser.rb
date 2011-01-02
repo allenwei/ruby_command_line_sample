@@ -18,8 +18,8 @@ opt_parser = OptionParser.new do |opt|
     options[:envrionment] = envrionment
   end
   
-  opt.on("-d","--deamon","runing on deamon mode?") do
-    options[:deamon] = true
+  opt.on("-d","--daemon","runing on daemon mode?") do
+    options[:daemon] = true
   end
   
   opt.on("-h","--help","help") do 

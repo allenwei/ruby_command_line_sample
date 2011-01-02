@@ -6,7 +6,7 @@ require 'thor'
 class ThorExample < Thor 
   desc "start", "start server" 
   method_option :environment,:default => "development", :aliases => "-e",:desc => "which enviroment you want server run."
-  method_option :deamon, :type => :boolean, :default => false, :aliases => "-d",:desc => "runing on deamon mode?"
+  method_option :daemon, :type => :boolean, :default => false, :aliases => "-d",:desc => "runing on daemon mode?"
   def start 
     puts "start #{options.inspect}"
   end

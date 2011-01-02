@@ -15,12 +15,12 @@ opt_parser = OptionParser.new do |opt|
   opt.separator  ""
   opt.separator  "Options"
   
-  opt.on("-e ENVIRONMENT","--envrionment ENVIRONMENT",Numeric,"which enviroment you want server run") do |envrionment|
-    options[:envrionment] = envrionment
+  opt.on("-e ENVIRONMENT","--environment ENVIRONMENT",Numeric,"which enviroment you want server run") do |environment|
+    options[:environment] = environment
   end
   
-  opt.on("-d","--deamon","runing on deamon mode?") do
-    options[:deamon] = true
+  opt.on("-d","--daemon","runing on daemon mode?") do
+    options[:daemon] = true
   end
   
   opt.on("--delay N", Float, "Delay N seconds before executing") do |n|
